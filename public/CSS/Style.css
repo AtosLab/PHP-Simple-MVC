@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    min-width: 768px;
+    font-size: 15px;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+                                        /*HOME and Inspire Page css*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+ul#menu li {
+    display:inline;
+}
+ul#links li {
+    display:inline;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+ul#menu {
+    margin-left: -100px;
+}
+                                    /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+.left {
+    float:left;
+    height: 100px;
+    width:20%;
+}
+
+.vertical-row{
+    display: inline-block;
+    border: 1px solid black;
+    height: 100px;
+    width: 1px;
+}
+
+.horizontal-row{
+    display: inline-block;
+    border: 1px solid black;
+    height: 1px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main {
+    float:left;
+    height: 100px;
+
+    width:60%;
+}
+
+.right {
+    height: 100px;
+    float:left;
+    width:20%;
+}
+.left, .right {
+    float: left;
+    width: 20%;
+}
+
+.main {
+    float: left;
+    width: 60%;
+}
+.nav-img{
+    height:50px;
+    width:50px;
+}
+
+
+.search {
+    padding: 6px 50% 6px 5px;
+    margin-top: 42px;
+    margin-left: 50px;
+}
+
+
+
+.rounded {
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+}
+
+#sign-up-links{
+    margin-left: 50px;
+}
+
+.post-panel{
+    border: 1px solid black;
+    width: 100%;
+    /*height: 100px;*/
+}
+
+.post-images{
+    height:86px;
+    width:157px;
+    margin-right: 15px;
+    float: left;
+    margin-top: 5px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-vertical-row{
+    margin-bottom: -8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    border: 1px solid black;
+    height: 22px;
+    width: 1px;
+}
+
+.post-options{
+    margin-left: 10px;
+}
+
+.repost-place {
+    float: right;
+    /*margin-right: 10px;*/
+    margin-top: -10px;
+}
+
+.remove-inspire-place{
+    float: right;
+    /*margin-right: 10px;*/
+    margin-top: 38px;
+}
+
+
+                                                /*Profile Page css*/
+
+.profile-img{
+    height: 140px;
+    width: 140px;
+    margin-top: 30px;
+}
+
+.profile-edit-button{
+    float: right;
+}
+.profile-followers{
+    margin-left:40px;
+}
+
+
+                                            /*Detail Page CSS*/
+.detail-panel{
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.detail-panel-image{
+    height: 500px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.loop-widget{
+    height: 50px;
+    width: 50px;
+    float: right;
+}
+
+.inspire-widget{
+    height: 50px;
+    width: 50px;
+    right: 15px;
+    bottom: 70px;
+    position: absolute;
+}
+
+.comment-section{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.comment h5,
+.comment p {
+    display: inline;
+    vertical-align: top;
+    font-family: 'Times', serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.comment .comment-reply{
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-img{
+        margin-top: 28px;
+        height:18px;
+        width:18px;
+    }
+    .vertical-row{
+        display: none;
+    }
+    #sign-up-links{
+        margin-left: 20px;
+    }
+
+    .repost-place {
+        float: none;
+        /*margin-right: 10px;*/
+        margin-top: -10px;
+    }
+
+    .remove-inspire-place{
+        float: right;
+        /*margin-right: 10px;*/
+        margin-top: -10px;
+    }
+
+                                                /*Profile Page css*/
+    .profile-img {
+        height: 100px;
+        width: 100px;
+        margin-top: 0;
+    }
+
+                                                 /*Detail Page CSS*/
+
+    .detail-panel-image{
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .loop-widget{
+        height:18px;
+        width:18px;
+        float:right;
+    }
+
+    .inspire-widget{
+        height:18px;
+        width:18px;
+        right: 0px;
+        bottom: 0px;
+        position: initial;
+        float:left;
+    }
+
+    .widget-panel{
+        height: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}
+
+.fcenter {
+    text-align: center;
+}
+
+.alert-text {
+    color: red;
+}
+
+.fw100 {
+    width: 100%;
+}
